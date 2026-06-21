@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>???</title>
+  <title>PIXILATION</title>
   <style>
     body {
       margin: 0;
-      height: 100vh;
       background: url("pixilation.gif") center center;
       background-size: cover;
       overflow: hidden;
+      color: white;
+      font-family: monospace;
+    }
+
+    #msg {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      opacity: 0.7;
     }
   </style>
 </head>
@@ -18,6 +27,14 @@
 <audio autoplay loop>
   <source src="pixilation.mp3" type="audio/mpeg">
 </audio>
+
+<div id="msg">RETURNING TO LAST SAVE...</div>
+
+<script>
+setTimeout(() => {
+  window.location.href = "index.html";
+}, 5000);
+</script>
 
 </body>
 </html>
