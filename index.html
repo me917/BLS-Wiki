@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Studio Plane Archive</title>
+  <title>Blinding Lights Studio Official Docs</title>
 </head>
 
 <body style="margin:0; background:#0b0b10; color:white; font-family:Arial;">
 
   <div style="text-align:center; padding:60px;">
-    <h1 style="font-size:40px;">STUDIO PLANE</h1>
-    <p style="opacity:0.8;">Threaded Archive Entry Point</p>
+    <h1 style="font-size:40px;">BLS Studio Official Docs</h1>
+    <p id="randomMessage"></p>
+
+    <script>
+    const messages = [
+      "Thank you fandom for deleting my wikis, this is payback",
+      "Made by Stainless and Fredster",
+      "You can't foil my master plan",
+      "Beep boop... bap",
+      "I'M DYING!?",
+      "Technically, all humans are!",
+      "you like struggling with HTML don't you?",
+      "Getting freaky on a friday night"
+    ];
+
+    const pick = messages[Math.floor(Math.random() * messages.length)];
+
+    document.getElementById("randomMessage").textContent = pick;
+    </script>
   </div>
 
   <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
